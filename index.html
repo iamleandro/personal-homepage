@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>leo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: #f6f3ec; color: #2c2925; font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  a { color: #2c2925; text-decoration: none; }
+  a:hover { color: #a9392c; }
+  @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .reveal { animation: reveal 1.8s cubic-bezier(0.2, 0.6, 0.2, 1) both; }
+  .reveal-late { animation-delay: 0.5s; }
+  .link { position: relative; }
+  .link::after { content: ""; position: absolute; left: 0; bottom: -8px; height: 1px; width: 100%; background: currentColor; transform-origin: left; transform: scaleX(0.3); transition: transform 0.9s cubic-bezier(0.2, 0.6, 0.2, 1); }
+  .link:hover::after { transform: scaleX(1); }
+  @media (prefers-reduced-motion: reduce) { .reveal, .reveal-late { animation: none; } .link::after { transition: none; } }
+</style>
+</head>
+<body>
+<div style="position: relative; min-height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 0 14vh 12vw; background: #f6f3ec;">
+  <div class="reveal" style="position: absolute; top: 12vh; right: 12vw; width: 9px; height: 9px; background: #a9392c;"></div>
+  <div class="reveal reveal-late" style="display: flex; flex-direction: column; gap: 32px; align-items: flex-start;">
+    <p style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.36em; text-transform: uppercase; color: #8d877d;">leo</p>
+    <a class="link" href="https://www.linkedin.com/in/iamleandro-de-paula/" style="font-size: 24px; font-weight: 400; letter-spacing: 0.08em; line-height: 1; display: inline-block; color: #2c2925;">work</a>
+  </div>
+</div>
+</body>
+</html>
