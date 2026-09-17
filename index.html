@@ -3,29 +3,391 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>leo</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap">
-<style>
-  html, body { margin: 0; height: 100%; }
-  body { background: #f6f3ec; color: #2c2925; font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-  a { color: #2c2925; text-decoration: none; }
-  a:hover { color: #a9392c; }
-  @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-  .reveal { animation: reveal 1.8s cubic-bezier(0.2, 0.6, 0.2, 1) both; }
-  .reveal-late { animation-delay: 0.5s; }
-  .link { position: relative; }
-  .link::after { content: ""; position: absolute; left: 0; bottom: -8px; height: 1px; width: 100%; background: currentColor; transform-origin: left; transform: scaleX(0.3); transition: transform 0.9s cubic-bezier(0.2, 0.6, 0.2, 1); }
-  .link:hover::after { transform: scaleX(1); }
-  @media (prefers-reduced-motion: reduce) { .reveal, .reveal-late { animation: none; } .link::after { transition: none; } }
-</style>
+<title>Leandro De Paula | Independent Technology Consultant</title>
+<meta name="description" content="Independent technology consulting for workflow modernization, agentic engineering foundations, cloud and data systems, and fractional technical leadership.">
+<meta name="author" content="Leandro De Paula">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#101828">
+
+<!--
+  CANONICAL_URL_PLACEHOLDER: no domain has been assigned to this site yet.
+  Once one is available, add a canonical link tag here:
+  <link rel="canonical" href="[your domain]">
+-->
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Leandro De Paula | Independent Technology Consultant">
+<meta property="og:description" content="Independent technology consulting for workflow modernization, agentic engineering foundations, cloud and data systems, and fractional technical leadership.">
+<meta property="og:locale" content="en_CA">
+<!--
+  OG_IMAGE_PLACEHOLDER: no social preview image has been created yet.
+  Add a 1200x630 image named og-image.png to the site root, then uncomment:
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:alt" content="Leandro De Paula, Independent Technology Consultant">
+-->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Leandro De Paula | Independent Technology Consultant">
+<meta name="twitter:description" content="Independent technology consulting for workflow modernization, agentic engineering foundations, cloud and data systems, and fractional technical leadership.">
+
+<!--
+  FAVICON_PLACEHOLDER: the icon below is a minimal inline monogram so the
+  browser tab isn't blank. Replace with real favicon files any time — see
+  README.md "Updating SEO and social-sharing values".
+-->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101828'/%3E%3Ctext x='32' y='43' font-family='system-ui,sans-serif' font-size='30' font-weight='600' fill='%23F7F7F4' text-anchor='middle'%3ELD%3C/text%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "#person",
+      "name": "Leandro De Paula",
+      "jobTitle": "Independent Technology Consultant",
+      "email": "mailto:dipaula.leandro@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/iamleandro-de-paula/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "knowsAbout": [
+        "Software and backend engineering",
+        "Technical and solution architecture",
+        "Engineering leadership",
+        "Cloud platforms and migrations",
+        "Data architecture and integration",
+        "Analytics and data governance",
+        "High-availability digital platforms",
+        "AI-assisted and agentic engineering"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "#service",
+      "name": "Leandro De Paula — Independent Technology Consulting",
+      "description": "Independent technology consulting for workflow modernization, agentic engineering foundations, cloud and data systems, and fractional technical leadership.",
+      "provider": { "@id": "#person" },
+      "areaServed": "CA",
+      "email": "mailto:dipaula.leandro@gmail.com"
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<div style="position: relative; min-height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 0 14vh 12vw; background: #f6f3ec;">
-  <div class="reveal" style="position: absolute; top: 12vh; right: 12vw; width: 9px; height: 9px; background: #a9392c;"></div>
-  <div class="reveal reveal-late" style="display: flex; flex-direction: column; gap: 32px; align-items: flex-start;">
-    <p style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.36em; text-transform: uppercase; color: #8d877d;">leo</p>
-    <a class="link" href="https://www.linkedin.com/in/iamleandro-de-paula/" style="font-size: 24px; font-weight: 400; letter-spacing: 0.08em; line-height: 1; display: inline-block; color: #2c2925;">work</a>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#hero">Leandro De Paula</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!-- BOOKING_URL_PLACEHOLDER: see script.js to set a real scheduling link in one place. -->
+    <a class="btn btn-primary btn-compact header-cta" data-booking-link
+       href="mailto:dipaula.leandro@gmail.com?subject=Free%2030-minute%20consultation">
+      Book a free consultation
+    </a>
   </div>
-</div>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+  <section id="hero" class="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent Technology Consulting &middot; Canada</p>
+        <h1 id="hero-heading">Practical technology consulting for the work that needs to get done.</h1>
+        <p class="hero-lede">
+          I help growing businesses modernize neglected workflows, establish dependable
+          AI-assisted engineering foundations, and bring senior technical leadership to
+          critical initiatives.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" data-booking-link
+             href="mailto:dipaula.leandro@gmail.com?subject=Free%2030-minute%20consultation">
+            Book a free 30-minute consultation
+          </a>
+          <a class="btn btn-secondary" href="#services">Explore services</a>
+        </div>
+        <p class="hero-availability">
+          Independent consulting for focused projects, hands-on delivery, and fractional engagements.
+        </p>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="hero-graphic-grid"></div>
+        <div class="hero-graphic-node hero-graphic-node--a"></div>
+        <div class="hero-graphic-node hero-graphic-node--b"></div>
+        <div class="hero-graphic-node hero-graphic-node--c"></div>
+        <div class="hero-graphic-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="credibility" class="credibility" aria-label="Professional credibility highlights">
+    <dl class="credibility-list">
+      <div class="credibility-item">
+        <dt>18+ years</dt>
+        <dd>Across engineering, architecture, and technical leadership.</dd>
+      </div>
+      <div class="credibility-item">
+        <dt>AWS, Azure &amp; Google Cloud</dt>
+        <dd>Hands-on experience across all three major cloud platforms.</dd>
+      </div>
+      <div class="credibility-item">
+        <dt>Operational workflows to high-availability platforms</dt>
+        <dd>Comfortable across the full range of technical work, big and small.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="services" class="services" aria-labelledby="services-heading">
+    <div class="section-intro">
+      <p class="eyebrow">Services</p>
+      <h2 id="services-heading">Three ways to bring in senior technical help</h2>
+      <p class="section-lede">
+        Engagements range from a focused advisory conversation to hands-on delivery
+        and ongoing fractional support &mdash; shaped around the problem in front of you.
+      </p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card" aria-labelledby="service-1-heading">
+        <p class="service-number">01</p>
+        <h3 id="service-1-heading">Workflow &amp; Data Modernization</h3>
+        <p class="service-problem">
+          Critical work is running on manual processes, fragile spreadsheets, and
+          integrations nobody wants to touch.
+        </p>
+        <p class="service-description">
+          Replace fragile, repetitive processes with dependable systems your team
+          can understand and operate. I take on the neglected but business-critical
+          technical work that internal teams rarely have time to address.
+        </p>
+        <ul class="service-capabilities">
+          <li>File-based integrations and recurring data feeds</li>
+          <li>Spreadsheet-heavy and manual workflow redesign</li>
+          <li>Data cleanup, validation, and reconciliation</li>
+          <li>Legacy application and system integration</li>
+          <li>ETL/ELT pipelines and data movement</li>
+          <li>Reporting and analytics foundations</li>
+        </ul>
+        <p class="service-best-for">
+          <strong>Best for:</strong> operations and IT teams whose critical processes
+          have outgrown ad hoc solutions.
+        </p>
+        <a class="service-link" href="#contact">
+          Discuss workflow &amp; data modernization
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </article>
+
+      <article class="service-card" aria-labelledby="service-2-heading">
+        <p class="service-number">02</p>
+        <h3 id="service-2-heading">Agentic Engineering Foundations</h3>
+        <p class="service-problem">
+          You want to build with AI coding agents, but you don't have the engineering
+          structure to keep the result maintainable.
+        </p>
+        <p class="service-description">
+          Give AI coding agents the structure, context, and guardrails they need to
+          produce software you can actually build on. AI agents can accelerate
+          development, but they still need architecture, testing, and delivery
+          discipline &mdash; this work helps you validate ideas and build a stronger MVP
+          while delaying premature hiring.
+        </p>
+        <ul class="service-capabilities">
+          <li>Repository and application structure</li>
+          <li>Development standards and agent instructions</li>
+          <li>Automated testing and quality checks</li>
+          <li>CI/CD pipelines and preview environments</li>
+          <li>Observability, error tracking, and secrets management</li>
+          <li>Documentation and human review guardrails</li>
+        </ul>
+        <p class="service-best-for">
+          <strong>Best for:</strong> non-technical founders and product leaders who
+          want to move fast without losing control of the codebase.
+        </p>
+        <a class="service-link" href="#contact">
+          Discuss agentic engineering foundations
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </article>
+
+      <article class="service-card" aria-labelledby="service-3-heading">
+        <p class="service-number">03</p>
+        <h3 id="service-3-heading">Fractional Engineering &amp; Development</h3>
+        <p class="service-problem">
+          You need senior technical judgment and hands-on delivery, but not another
+          full-time hire.
+        </p>
+        <p class="service-description">
+          Add senior technical judgment and hands-on execution exactly where your
+          team needs it. Engagements range from a short discovery and roadmap to
+          ongoing fractional leadership and direct implementation.
+        </p>
+        <ul class="service-capabilities">
+          <li>Fractional technical leadership</li>
+          <li>Solution and systems architecture</li>
+          <li>Technical discovery and roadmaps</li>
+          <li>Architecture and code reviews</li>
+          <li>Hands-on backend and platform development</li>
+          <li>Mentoring and unblocking small engineering teams</li>
+        </ul>
+        <p class="service-best-for">
+          <strong>Best for:</strong> teams that need experienced direction and
+          execution for a defined period, without a permanent hire.
+        </p>
+        <a class="service-link" href="#contact">
+          Discuss fractional engineering &amp; development
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section id="problems" class="problems" aria-labelledby="problems-heading">
+    <div class="section-intro">
+      <p class="eyebrow">Is this you?</p>
+      <h2 id="problems-heading">Does any of this sound familiar?</h2>
+    </div>
+    <ul class="problems-list">
+      <li>Critical information moves through spreadsheets, emailed files, or manual exports.</li>
+      <li>A recurring feed fails and only one person knows how to repair it.</li>
+      <li>Your team keeps postponing cleanup and automation because roadmap work always wins.</li>
+      <li>You want to build with AI coding agents but do not have the engineering structure to keep the product maintainable.</li>
+      <li>You need senior technical direction, but not another full-time hire.</li>
+      <li>A promising initiative is stalled between business intent and technical execution.</li>
+    </ul>
+    <p class="problems-closer">
+      These are the kinds of problems I help turn into clear, maintainable systems.
+    </p>
+  </section>
+
+  <section id="approach" class="approach" aria-labelledby="approach-heading">
+    <div class="section-intro">
+      <p class="eyebrow">Approach</p>
+      <h2 id="approach-heading">A pragmatic, proportionate way of working</h2>
+      <p class="section-lede">
+        No heavyweight consulting theatre &mdash; just a clear process, sized to the
+        problem you actually have.
+      </p>
+    </div>
+    <ol class="approach-steps">
+      <li class="approach-step">
+        <span class="approach-step-number" aria-hidden="true">1</span>
+        <h3>Understand</h3>
+        <p>Clarify the business problem, constraints, risks, and desired outcome.</p>
+      </li>
+      <li class="approach-step">
+        <span class="approach-step-number" aria-hidden="true">2</span>
+        <h3>Shape</h3>
+        <p>Define the smallest sensible solution and a practical delivery plan.</p>
+      </li>
+      <li class="approach-step">
+        <span class="approach-step-number" aria-hidden="true">3</span>
+        <h3>Build</h3>
+        <p>Implement, integrate, document, and validate the solution.</p>
+      </li>
+      <li class="approach-step">
+        <span class="approach-step-number" aria-hidden="true">4</span>
+        <h3>Enable</h3>
+        <p>Leave the team with maintainable systems, useful documentation, and a clear next step.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="experience" class="experience" aria-labelledby="experience-heading">
+    <div class="section-intro">
+      <p class="eyebrow">Experience</p>
+      <h2 id="experience-heading">Range, from strategy to implementation</h2>
+    </div>
+    <div class="experience-body">
+      <div class="experience-narrative">
+        <p>
+          Over more than 18 years, I have worked from frontline IT support and
+          hands-on software development through backend engineering leadership and
+          enterprise solution architecture. My experience includes high-traffic
+          digital platforms, event-driven systems, cloud migrations, data
+          integration, analytics platforms, and engineering teams operating across
+          AWS, Azure, and Google Cloud.
+        </p>
+        <p>
+          That range allows me to move between executive conversations, architecture
+          decisions, delivery planning, and implementation without losing sight of
+          the operational details.
+        </p>
+        <p class="experience-proof">
+          Among that work: architecting a high-traffic platform designed for
+          99.99% uptime.
+        </p>
+      </div>
+      <ul class="experience-capabilities">
+        <li>Backend and distributed systems</li>
+        <li>Data architecture and integration</li>
+        <li>Snowflake and Microsoft Fabric</li>
+        <li>ETL/ELT and analytics enablement</li>
+        <li>AWS, Azure, and Google Cloud</li>
+        <li>CI/CD and engineering enablement</li>
+        <li>Technical leadership and stakeholder communication</li>
+        <li>AI agents and workflow automation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-cta" aria-labelledby="contact-heading">
+    <div class="contact-cta-inner">
+      <h2 id="contact-heading">Let&rsquo;s make the next technical step clear.</h2>
+      <p>
+        Bring a stubborn workflow, an early product idea, or a delivery challenge.
+        In a free 30-minute consultation, we&rsquo;ll clarify the problem, explore
+        practical options, and determine whether I&rsquo;m the right person to help.
+      </p>
+      <!-- BOOKING_URL_PLACEHOLDER: see script.js to set a real scheduling link in one place. -->
+      <a class="btn btn-primary btn-large" data-booking-link
+         href="mailto:dipaula.leandro@gmail.com?subject=Free%2030-minute%20consultation">
+        Book a free 30-minute consultation
+      </a>
+      <p class="contact-alt">
+        Prefer email?
+        <a href="mailto:dipaula.leandro@gmail.com">dipaula.leandro@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-copyright">&copy; <span id="current-year">2026</span> Leandro De Paula</p>
+    <ul class="footer-links">
+      <li>
+        <a href="mailto:dipaula.leandro@gmail.com">dipaula.leandro@gmail.com</a>
+      </li>
+      <li>
+        <a class="icon-link" href="https://www.linkedin.com/in/iamleandro-de-paula/"
+           aria-label="Leandro De Paula on LinkedIn (opens in a new tab)"
+           target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="footer-statement">Independent technology consulting based in Canada.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
