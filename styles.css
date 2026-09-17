@@ -692,10 +692,6 @@ main:focus {
   font-size: 1.05rem;
 }
 
-.contact-cta .btn-primary {
-  margin-top: var(--space-4);
-}
-
 .contact-cta .contact-alt {
   margin-top: var(--space-3);
   font-size: 0.95rem;
@@ -710,6 +706,59 @@ main:focus {
 
 .contact-alt a:hover {
   border-color: var(--color-white);
+}
+
+.contact-cta .booking-card {
+  width: 100%;
+  max-width: 640px;
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  color: var(--color-ink);
+  text-align: left;
+}
+
+.contact-cta .booking-card .booking-heading {
+  color: var(--color-ink);
+  font-size: 1.2rem;
+}
+
+.contact-cta .booking-card .booking-description {
+  margin-top: 0.4em;
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  max-width: none;
+}
+
+.tymeslot-embed {
+  margin-top: var(--space-3);
+  width: 100%;
+  min-height: 480px;
+}
+
+.contact-cta .booking-card .booking-fallback {
+  margin-top: var(--space-3);
+  color: var(--color-gray);
+  font-size: 0.85rem;
+  max-width: none;
+}
+
+.contact-cta .booking-card .booking-fallback a {
+  color: var(--color-accent);
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+
+.contact-cta .booking-card .booking-fallback a:hover {
+  border-color: currentColor;
+}
+
+@media (min-width: 640px) {
+  .contact-cta .booking-card {
+    padding: var(--space-5);
+  }
 }
 
 /* --------------------------------------------------------------------------

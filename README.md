@@ -7,9 +7,9 @@ dependencies.
 ## Files
 
 ```
-index.html    Page content, structured data, SEO/social meta tags
+index.html    Page content, structured data, SEO/social meta tags, Tymeslot embed
 styles.css    All styling
-script.js     Optional progressive enhancement (booking-link config, footer year)
+script.js     Optional progressive enhancement (footer year only)
 README.md     This file
 ```
 
@@ -28,22 +28,28 @@ No build step is required. Either:
 
   Then visit `http://localhost:8000`.
 
-The site works with JavaScript disabled: all consultation buttons already
-fall back to a `mailto:` link.
+The site works with JavaScript disabled: the page content, navigation, and
+`mailto:` links all still work. The Tymeslot booking widget itself requires
+JavaScript (it's a third-party embed); with JavaScript off, or if the
+Tymeslot script fails to load, a visible fallback link to
+`https://tymeslot.app/leo` is shown in its place.
 
-## Replacing the booking URL
+## Updating the booking widget
 
-There is one place to set a real scheduling link (Calendly, Cal.com, etc.):
-open `script.js` and set the constant near the top of the file:
+The "Book a free consultation" buttons in the header and hero are plain
+anchor links to `#book`, which scrolls to the live scheduler embedded in
+the final consultation section (`index.html`, inside `<section id="contact">`).
 
-```js
-const BOOKING_URL_PLACEHOLDER = "https://cal.com/your-handle/30min";
+The scheduler itself is Tymeslot's official inline embed:
+
+```html
+<div id="tymeslot-booking" data-username="leo" data-layout="column"></div>
+<script src="https://tymeslot.app/embed.js" async></script>
 ```
 
-Every button marked with `data-booking-link` in `index.html` (header CTA,
-hero CTA, and the final consultation section) will then point to that URL
-automatically. Leave the constant as `null` to keep the current `mailto:`
-fallback.
+To point it at a different Tymeslot account, change `data-username="leo"`
+to the new username, and update the fallback link (`https://tymeslot.app/leo`,
+appears twice — once as a normal fallback, once inside `<noscript>`) to match.
 
 ## Updating contact information
 

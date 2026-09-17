@@ -1,29 +1,14 @@
 /**
  * Leandro De Paula — Independent Technology Consulting
  *
- * This script is entirely optional progressive enhancement. Every link and
- * piece of content on the page works without it: the consultation buttons
- * already point at a mailto: fallback in the HTML, and the footer year is
- * hardcoded.
- *
- * ---------------------------------------------------------------------
- * BOOKING_URL_PLACEHOLDER — single configuration point
- * ---------------------------------------------------------------------
- * Once a real scheduling link exists (Calendly, Cal.com, etc.), set it
- * below. Every "Book a free consultation" button on the page will then
- * point to it automatically. Leave it as `null` to keep the email
- * fallback that is already in the HTML.
+ * This script is entirely optional progressive enhancement. The rest of
+ * the page works without it: the "Book a free consultation" buttons are
+ * plain anchor links to the #book section, and the Tymeslot widget itself
+ * is loaded by its own <script> tag in index.html (see the #book section),
+ * not from here — that keeps it loaded exactly once, at the same point in
+ * the document as the div it renders into.
  */
-const BOOKING_URL_PLACEHOLDER = null; // e.g. "https://cal.com/your-handle/30min"
-
 document.addEventListener("DOMContentLoaded", () => {
-  if (BOOKING_URL_PLACEHOLDER) {
-    document.querySelectorAll("[data-booking-link]").forEach((link) => {
-      link.setAttribute("href", BOOKING_URL_PLACEHOLDER);
-      link.removeAttribute("target");
-    });
-  }
-
   const yearEl = document.getElementById("current-year");
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());

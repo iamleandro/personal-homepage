@@ -87,9 +87,7 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-    <!-- BOOKING_URL_PLACEHOLDER: see script.js to set a real scheduling link in one place. -->
-    <a class="btn btn-primary btn-compact header-cta" data-booking-link
-       href="mailto:dipaula.leandro@gmail.com?subject=Free%2030-minute%20consultation">
+    <a class="btn btn-primary btn-compact header-cta" href="#book">
       Book a free consultation
     </a>
   </div>
@@ -108,8 +106,7 @@
           critical initiatives.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary btn-large" data-booking-link
-             href="mailto:dipaula.leandro@gmail.com?subject=Free%2030-minute%20consultation">
+          <a class="btn btn-primary btn-large" href="#book">
             Book a free 30-minute consultation
           </a>
           <a class="btn btn-secondary" href="#services">Explore services</a>
@@ -340,11 +337,34 @@
         In a free 30-minute consultation, we&rsquo;ll clarify the problem, explore
         practical options, and determine whether I&rsquo;m the right person to help.
       </p>
-      <!-- BOOKING_URL_PLACEHOLDER: see script.js to set a real scheduling link in one place. -->
-      <a class="btn btn-primary btn-large" data-booking-link
-         href="mailto:dipaula.leandro@gmail.com?subject=Free%2030-minute%20consultation">
-        Book a free 30-minute consultation
-      </a>
+      <div id="book" class="booking-card">
+        <h3 id="booking-heading" class="booking-heading">Book a free consultation</h3>
+        <p class="booking-description">
+          A free 30-minute consultation over Google Meet &mdash; pick a time that works for you.
+        </p>
+        <!--
+          Tymeslot inline embed. The widget resizes its own iframe height
+          automatically; the min-height below just reserves space up front
+          so the page doesn't jump as it loads.
+        -->
+        <div
+          id="tymeslot-booking"
+          class="tymeslot-embed"
+          data-username="leo"
+          data-layout="column">
+        </div>
+        <script src="https://tymeslot.app/embed.js" async></script>
+        <p class="booking-fallback">
+          Scheduler not loading?
+          <a href="https://tymeslot.app/leo">Open the booking page directly</a>.
+        </p>
+        <noscript>
+          <p class="booking-fallback">
+            Enable JavaScript to book here, or
+            <a href="https://tymeslot.app/leo">open the booking page directly</a>.
+          </p>
+        </noscript>
+      </div>
       <p class="contact-alt">
         Prefer email?
         <a href="mailto:dipaula.leandro@gmail.com">dipaula.leandro@gmail.com</a>
