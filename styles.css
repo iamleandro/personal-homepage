@@ -394,16 +394,15 @@ main:focus {
   border-radius: var(--radius-lg);
   background: linear-gradient(155deg, var(--color-ink) 0%, var(--color-charcoal) 100%);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-graphic-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(247, 247, 244, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(247, 247, 244, 0.08) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(circle at 30% 30%, black, transparent 75%);
+.hero-graphic-cluster {
+  position: relative;
+  width: 220px;
+  height: 180px;
 }
 
 .hero-graphic-node {
