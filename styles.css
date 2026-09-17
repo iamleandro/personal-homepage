@@ -349,17 +349,12 @@ main:focus {
   position: relative;
 }
 
-.hero-inner {
-  display: grid;
-  gap: var(--space-5);
+.hero-copy {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-@media (min-width: 960px) {
-  .hero-inner {
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    gap: var(--space-6);
-  }
+  text-align: center;
+  margin-inline: auto;
 }
 
 .hero-copy h1 {
@@ -377,6 +372,7 @@ main:focus {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-2);
   margin-top: var(--space-4);
 }
@@ -386,62 +382,6 @@ main:focus {
   font-size: 0.9rem;
   color: var(--color-gray);
   max-width: 42ch;
-}
-
-.hero-graphic {
-  position: relative;
-  min-height: 260px;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(155deg, var(--color-ink) 0%, var(--color-charcoal) 100%);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-graphic-cluster {
-  position: relative;
-  width: 220px;
-  height: 180px;
-}
-
-.hero-graphic-node {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--color-teal);
-}
-
-.hero-graphic-node--a {
-  top: 22%;
-  left: 28%;
-  background: var(--color-teal);
-}
-
-.hero-graphic-node--b {
-  top: 55%;
-  left: 62%;
-  width: 14px;
-  height: 14px;
-  background: var(--color-white);
-}
-
-.hero-graphic-node--c {
-  top: 74%;
-  left: 22%;
-  background: var(--color-accent);
-}
-
-.hero-graphic-line {
-  position: absolute;
-  top: 30%;
-  left: 32%;
-  width: 34%;
-  height: 1px;
-  background: rgba(247, 247, 244, 0.3);
-  transform: rotate(18deg);
-  transform-origin: left center;
 }
 
 /* --------------------------------------------------------------------------
